@@ -1,7 +1,7 @@
 #PHP/JS/MySQL
 Simple PHP MVC framework with example student scaffold.
 
-Before start, you should create the table in MySQL.
+### Before start, you should create the table in MySQL.
 
 ```javascript
 CREATE TABLE Students (
@@ -23,7 +23,7 @@ By default you do not have mod_rewrite available, the entry to the site will be 
 The .htaccess file will permit access to the site via urls such as
 http://www.example.com/index.php/controller/action 
 
-file .htaccess
+### file .htaccess
 ```
 RewriteEngine on
 
@@ -34,7 +34,7 @@ RewriteRule ^(.*)$ index.php?rt=$1 [L,QSA]
 ```
 
 
-Structure of project
+### Structure of project
 ```
 ├── app
 │   ├── controllers
