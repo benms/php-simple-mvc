@@ -3,6 +3,7 @@ Simple PHP MVC framework with example student scaffold.
 
 Before start, you should create the table in MySQL.
 
+```javascript
 CREATE TABLE Students (
          id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
          first_name VARCHAR(20) default 'Vasiliy',
@@ -11,7 +12,8 @@ CREATE TABLE Students (
          grp VARCHAR(10) default 'IT15-1',
          faculty VARCHAR(10) default 'FAM',
          created TIMESTAMP DEFAULT NOW()
-       ) ENGINE=INNODB;
+         ) ENGINE=INNODB;
+```
 
 then write to the file config/config.php parameteres with access to MySQL db.
 
@@ -22,18 +24,18 @@ The .htaccess file will permit access to the site via urls such as
 http://www.example.com/index.php/controller/action 
 
 file .htaccess
-___________________________________________
+```
 RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteRule ^(.*)$ index.php?rt=$1 [L,QSA] 
-___________________________________________
+```
 
 
 Structure of project
-
+```
 ├── app
 │   ├── controllers
 │   │   ├── default
@@ -73,6 +75,7 @@ Structure of project
     │   └── jquery.ujs.js
     └── styles
         └── main.css
+```
 
 The main script is /index.php, then it includes file /lib/includes/init.php.
 The base classes is in folder /lib.
