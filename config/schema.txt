@@ -1,0 +1,15 @@
+
+#Script for creating table in mysql
+
+CREATE TABLE Students (
+         id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+         first_name VARCHAR(20) default 'Vasiliy',
+         last_name VARCHAR(20) default 'Pupkin',
+         sex VARCHAR(6) default 'Male',
+         grp VARCHAR(10) default 'IT15-1',
+         faculty VARCHAR(10) default 'FAM',
+         created TIMESTAMP DEFAULT NOW()
+       ) ENGINE=INNODB;
+
+
+      
